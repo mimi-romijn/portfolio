@@ -1,9 +1,17 @@
 .pink-background {
-  background-color: #f6c0c0;
+  background-color: #FFFEFA;
 }
+
+.header-logo img {
+  float:left;
+  width: 100px;
+  height: 100px;
+
+}
+
 body {
   margin: 0;
-  background-color: #f6c0c0;
+  background-color:#FFFEFA;
   min-height: 100vh;
   flex-direction: column;
 }
