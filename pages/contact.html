@@ -6,34 +6,43 @@
     <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="pink-background nav-bar">
-        <h1>Mimi Romijn</h1>
+        <img class="logo" src="../img/logo_optimized.png" alt="logo">
         <nav>
-            <a href="../index.html">Home</a> |
-            <a href="aboutme.html">About Me</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="portfolio.html">Portfolio</a> |
+            <a href="../index.html">Home</a> 
+            <a href="aboutme.html">About Me</a> 
+            <a href="blog.html">Blog</a> 
+            <a href="portfolio.html">Portfolio</a> 
             <a href="contact.html">Contact</a>
-        </header>
-    </div id="contact-page">
-    <p class="padding-10"></p>
-    <p>Please fill out the form and I'll get in touch with you.</p>
-    <form id="contact-form">
-        <label>Name</label>
-        <input type="text">
-        <label>Phone Number</label>
-        <input type="text">
-        <label>Email</label>
-        <input type="text">
-        <label>Message</label>
-        <textarea></textarea>
-        <button>Submit</button>
-    </form>
-    <footer id="contact-footer">
-        © Mimi Romijn
+    </header>
+    <div class="container">
+        <p class="padding-10"></p>
+        <h1> Contact Me</h1>
+        <p>Please fill out the form and I'll get in touch with you.</p>
+        <form action="mailto:romijnmimi@gmail.com" method="post" enctype="text/plain" id="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button>Submit</button>
+        </form>
+        <div class="icons">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://au.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <a href="https://github.com/" class="fa fa-github"></a>
+         </div>
+    </div>
+    
+    <footer>
+        © Mimi Romijn 2020
     </footer>
 </body>
 
