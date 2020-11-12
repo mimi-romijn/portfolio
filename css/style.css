@@ -105,7 +105,7 @@ input[type=text], input[type=email], textarea {
   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
   .nav-bar {
     flex-direction: column-reverse;
   }
@@ -317,12 +317,22 @@ p {
   
 }
 
+.link-spacing {
+  padding: 6.18px;
+}
+
+.separate-links .link-spacing {
+  opacity: 1;
+}
+
+.separate-links .link-spacing:hover {
+  opacity: 0.5;
+}
+
 footer {
   position: relative;
   bottom: 0;
   text-align: center;
   margin: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
 }
