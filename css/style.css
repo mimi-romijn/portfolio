@@ -1,5 +1,5 @@
 .pink-background {
-  background-color: #FFFEFA;
+  background-color: #fffefa;
 }
 
 .logo {
@@ -10,34 +10,9 @@
   margin: 5px;
 }
 
-.index-slide-images {
-  width: 100%;
-  height: 0px;
-  padding-bottom: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-.index-slide-images img {
-  position: absolute;
-  animation: 20s infinite;
-  opacity: 0;
-  width: 100%;
-  height: auto;
-}
-
-@keyframes index-slide-images {
-  25%{opacity:1;} 
-  40%{opacity:0;}
-.index-slide-images img:nth-child(4){animation-delay:0s;}
-.index-slide-images img:nth-child(3){animation-delay:5s;}
-.index-slide-images img:nth-child(2){animation-delay:10s;}
-.index-slide-images img:nth-child(1){animation-delay:15s;}
-}
-
 body {
   margin: 0;
-  background-color:#FFFEFA;
+  background-color: #fffefa;
   min-height: 100vh;
   flex-direction: column;
 }
@@ -46,8 +21,8 @@ main {
   flex-grow: 1;
 }
 
-h1, h3, a {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1, h3, h4, a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
@@ -83,15 +58,14 @@ button:hover {
   padding: 10px;
   margin: 10px;
   border: 3px;
-  color: #FA5553;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fa5553;
 }
 
 a:visited {
-  color: #FA5553
+  color: #fa5553;
 }
 
-input[type=text], input[type=email], textarea {
+input[type="text"], input[type="email"], textarea {
   width: 50%;
   padding: 12px;
   border: none;
@@ -100,9 +74,9 @@ input[type=text], input[type=email], textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  background-color: #FA5553;
-  font-family: 'Open Sans', sans-serif;
-  
+  background-color: #fa5553;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 480px) {
@@ -116,83 +90,92 @@ input[type=text], input[type=email], textarea {
   }
 
   #blog-content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .h1 {
     font-size: 30px;
   }
+
+  .aboutme-text {
+    flex-direction: column;
+  }
 }
 
 #front-page-image {
-    height: auto;
-    width: 50%;
-    border-radius: 5px;
+  height: auto;
+  width: 50%;
+  border-radius: 5px;
 }
 
 #front-page-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
+/* Blog Page */
 .blog-image {
-    width: 80%;
+  width: 80%;
+  display: flex;
 }
 
 #blog-content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .blog-tile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
-    width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
 }
 
 /*  */
-#aboutme-page { 
+#aboutme-page {
   display: flex;
   align-items: center;
   margin: 30px;
 }
 
+#mimi-romijn {
+  align-items: center;
+  margin: 30px;
+}
+
+/* Contact Page */
 #contact-page {
-    text-align: center;
-    
+  text-align: center;
 }
 
 #contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-width: 0px, 0px, 0px, 0px;
-    background-color: #FFFEFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 0px, 0px, 0px, 0px;
+  background-color: #fffefa;
 }
 
 *:focus {
   outline: 0;
 }
 
-
 .container {
   padding: 12px, 24px, 24px, 24px;
   margin: 48px 12px;
-  background: #FFFEFA;
+  background: #fffefa;
   border-radius: 4px;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-input[type=text]:focus,input[type=email]:focus, textarea:focus {
-  border: solid green;
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border: solid #f9d2e4;
 }
-
 
 .padding-10 {
   padding: 10px;
@@ -219,18 +202,18 @@ input[type=text]:focus,input[type=email]:focus, textarea:focus {
 }
 
 .fa-linkedin {
-  background-color: #F9D2E4;
-  color: #FF3EB3; 
+  background-color: #f9d2e4;
+  color: #ff3eb3;
 }
 
 .fa-twitter {
-  background: #F9D2E4;
-  color: #FF3EB3;
+  background: #f9d2e4;
+  color: #ff3eb3;
 }
 
 .fa-github {
-  background: #F9D2E4;
-  color: #FF3EB3;
+  background: #f9d2e4;
+  color: #ff3eb3;
 }
 
 .fa:hover {
@@ -240,21 +223,30 @@ input[type=text]:focus,input[type=email]:focus, textarea:focus {
 /* Portfolio Page */
 
 body {
-  background:#FFFEFA;
-  color: #FA5553;
+  background: #fffefa;
+  color: #fa5553;
 }
 
-
 @keyframes fadeIn {
-  from {top: 20%; opacity: 0;}
-  to {top: 100; opacity: 1;}
-  
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  from {top: 20%; opacity: 0;}
-  to {top: 100; opacity: 1;}
-  
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
 }
 
 .wrapper {
@@ -265,56 +257,66 @@ body {
   -webkit-transform: translate(-50%, -50%);
   animation: fadeIn 2000ms ease;
   -webkit-animation: fadeIn 2000ms ease;
-  
 }
 
 h1 {
   font-size: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 0;
   line-height: 1;
   font-weight: 700;
 }
 
 .dot {
-  color: #FF3EB3;
+  color: #ff3eb3;
 }
 
 p {
   text-align: center;
   margin: 18px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
-  
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+.author, .date {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
 }
 
 .icons {
   text-align: center;
-  
 }
 
 .icons i {
-  color: #FFFEFA;
-  background: #FF3EB3;
+  color: #fffefa;
+  background: #ff3eb3;
   height: 15px;
   width: 15px;
   padding: 13px;
   margin: 5px;
   border-radius: 50px;
-  border: 2px solid #FFFEFA;
+  border: 2px solid #fffefa;
   transition: all 200ms ease;
   text-decoration: none;
   position: relative;
 }
 
 .icons i:hover, .icons i:active {
-  color: #FF3EB3;
+  color: #ff3eb3;
   background: none;
   cursor: pointer !important;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   text-decoration: none;
-  
 }
 
 .link-spacing {
@@ -329,10 +331,10 @@ p {
   opacity: 0.5;
 }
 
-footer {
+.footer {
   position: relative;
   bottom: 0;
   text-align: center;
   margin: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
